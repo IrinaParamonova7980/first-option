@@ -1,0 +1,329 @@
+.fon{
+    background-image: url(assets/images/fon.png);
+    width: 1440px;
+    height: 833px;
+    background-repeat: no-repeat;  
+}
+
+.fon2{
+    background-image: url(assets/images/fon2.png);
+    width: 1440px;
+    height: 897px;
+    top: 141px;
+    background-repeat: no-repeat; 
+}
+
+  .block-menu {
+    display: flex;
+    align-items: center;
+    max-width: 1246px;
+    margin-left: auto;         
+  }
+
+  #logo {
+    width: 167px;
+    }
+
+  .menu {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    text-align: center;
+    color: #275553;
+  }
+
+  .menu:hover {
+    background: #ffffff;
+  }
+
+  #booking {
+    box-sizing: border-box;
+    width: 177px;
+    height: 40px;
+    left: 1168px;
+    top: 35px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #275553;
+    background-color: transparent;
+    border: 1px solid #275553;
+    border-radius: 5px;
+  }
+
+  #booking:hover {
+    color: #ffffff;
+  }
+
+  h1 {
+    width: 616px;
+    height: 128px;
+    left: 96px;
+    top: 120px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    color: #ffffff;
+  }
+
+  h2 {
+    width: 728px;
+    height: 112px;
+    left: 96px;
+    top: 60px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #121212;
+  }
+
+  #rectangle {
+    width: 481px;
+    height: 61px;
+    left: 99px;
+    top: 316px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 56px;
+    color: #ffffff;
+    background: linear-gradient(91.82deg, #fb8b62 5.83%, #f47648 89.73%);
+    backdrop-filter: blur(34px);
+    border-radius: 16px;
+  }
+
+  #text {
+    width: 384px;
+    height: 56px;
+    left: 99px;
+    top: 417px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+    #schedule2 {
+    width: 140px;
+    height: 24px;
+    left: 99px;
+    top: 511px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .arrow {
+    width: 64px;
+    height: 64px;
+    left: 256px;
+    top: 491px;
+  }
+
+  #facebook {
+    width: 18.25px;
+    height: 20px;
+    left: 96px;
+    top: 706px;
+    color: #DFDFDF;
+  }
+
+  #facebook {
+    width: 18.25px;
+    height: 20px;
+    left: 96px;
+    top: 706px;
+    color: #DFDFDF;
+  }
+
+  #instagram {
+    width: 20px;
+    height: 20px;
+    left: 139px;
+    top: 706px;
+    color: #DFDFDF;
+  }
+
+  #man {
+    width: 269.1px;
+    height: 267.9px;
+    left: 736.12px;
+    top: 458px;
+  }
+
+  #bear {
+    width: 211.45px;
+    height: 209.27px;
+    left: 1040.09px;
+    top: 513.59px;
+  }
+
+  #sea {
+    width: 208.18px;
+    height: 209.27px;
+    left: 1286.41px;
+    top: 516.86px;
+  }
+
+  #text2 {
+    width: 571px;
+    height: 64px;
+    left: 96px;
+    top: 100px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #313131;
+  }
+
+  #text3 {
+    width: 613px;
+    height: 120px;
+    left: 96px;
+    top: 180px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #313131;
+  }
+
+  #conditions_blok {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+    width: 758px;
+    height: 88px;
+    left: 96px;        
+  }
+
+  .conditions {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #212121;
+    list-style-type: none;
+  }
+
+  li p:last-child {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+.icons{
+    width: 32px;
+    height: 32px 
+}
+
+.footer_fon{
+    background: #212121;
+    width: 1440px;
+    height: 529px;   
+}
+
+  #menu_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 400px;
+    height: 144px;
+    left: 97px;
+    top: 140px;
+    }
+
+  .menu2 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #bababa;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    }
+
+  .menu2:hover:hover {
+    background: #ffffff;
+  }
+
+  #address {
+    width: 204px;
+    height: 158px;
+    left: 1151px;
+    top: 63px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  #address::first-line {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #logo_footer {
+    width: 167.11px;
+    height: 37.18px;
+    left: 96px;
+    top: 63px;
+   }  
+  
+  #plane{
+    height: 327.07px;
+    left: 882.83px;
+    transform: rotate(3.3deg);
+  }
+
+  #text4{
+    width: 662px;
+    height: 96px;
+    left: 100px;
+    top: 502px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+
+  #text5{
+    width: 299px;
+    height: 57px;
+    left: 100px;
+    top: 630px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE; 
+  }
+
