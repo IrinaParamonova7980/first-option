@@ -1,8 +1,14 @@
+body {
+  font-family: "Vollkorn", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .container {
   display: grid;
-  width: 1440px;
-  grid-template-columns: 250px 940px 250px;
-  grid-template-rows: 106px 391px 289px 625px 158px 403px 403px 403px 517px 639px;
+  width: 100vw;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 3% 9.6% 7% 15% 3.9% 33% 12.7% 15.7%;
 }
 
 .header {
@@ -10,59 +16,46 @@
   grid-column: 2/3;
 }
 
-.section-1 {
+.section_making_brands {
   grid-row: 2/3;
   grid-column: 1/4;
   background-image: url(assets/images/section1_fon.png);
-  height: 100%;
+  background-size: 100% 100%;
 }
 
-.section-2 {
+.section-description_minimalist {
   grid-row: 3/4;
   grid-column: 1/4;
   background-color: #fefec9;
 }
 
-.section-3 {
+.how_we_make_section {
   grid-row: 4/5;
   grid-column: 2/3;
 }
 
-.section-4_heading {
+.recent_projects_heading {
   grid-row: 5/6;
   grid-column: 2/3;
   align-self: center;
 }
 
-.section-4_block1 {
+.recent_projects_blocks {
   grid-row: 6/7;
   grid-column: 2/3;
   display: flex;
-  gap: 20px;
-}
-
-.section-4_block2 {
-  grid-row: 7/8;
-  grid-column: 2/3;
-  display: flex;
-  gap: 20px;
-}
-
-.section-4_block3 {
-  grid-row: 8/9;
-  grid-column: 2/3;
-  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .contacts {
-  grid-row: 9/10;
+  grid-row: 7/8;
   grid-column: 1/4;
   background-image: url(assets/images/fon_footer.png);
 }
 
 .footer {
-  grid-row: 10/11;
+  grid-row: 8/9;
   grid-column: 1/4;
   background: #000000;
 }
@@ -117,23 +110,17 @@ h1 {
   color: #ffffff;
 }
 
-.section1_text {
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.text_making_brands {
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.81);
 }
 
-.section2_text {
+.description_minimalist_text {
   margin-top: 60px;
   margin-left: 250px;
   margin-right: 250px;
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -148,9 +135,6 @@ h1 {
   height: 53px;
   margin-top: 40px;
   margin-left: calc(50% - 159px / 2 + 0.5px);
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -161,7 +145,7 @@ h1 {
   background: #ffffff;
 }
 
-h2 {
+.h2 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -171,30 +155,26 @@ h2 {
   text-align: center;
 }
 
-.how_we_make {
-  margin: 69px 0 0 0;
-}
-
 .blocks_how_we_make {
   display: flex;
   margin: 103px 0 38px 0;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.block_how_we_make {
+  flex-basis: 300px;
 }
 
 .fon_img_how_we_make {
-  width: 300px;
+  display: flex;
+  justify-content: center;
   height: 219px;
   background-color: #f5f5f5;
   align-items: center;
 }
 
-.img_how_we_make {
-  width: 127px;
-  height: 119px;
-  margin: 50px 87px 50px 86px;
-}
-
-h3 {
+.h3 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -206,17 +186,17 @@ h3 {
 }
 
 .text_how_we_make {
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   text-align: center;
   color: #333333;
-  margin-top: 20px;
 }
 
-.section-4_kontent {
+.recent_projects_foto {
+  margin: 0;
+}
+
+.recent_projects_kontent {
   text-align: center;
   margin-top: 19px;
   font-family: "Montserrat", sans-serif;
@@ -227,12 +207,9 @@ h3 {
   color: #333333;
 }
 
-.section-4_kontent2 {
+.recent_projects_kontent2 {
   margin-top: 4px;
   text-align: center;
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
@@ -243,11 +220,7 @@ h3 {
   margin-top: 73px;
 }
 
-.heading_lets_get {
-  margin-top: 79px;
-}
-
-h4 {
+.h4 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -258,9 +231,6 @@ h4 {
 }
 
 .contacts_text {
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 17px;
   line-height: 22px;
   text-align: center;
@@ -307,9 +277,7 @@ h4 {
 .form_text3 {
   width: 564px;
   padding-left: 31px;
-  font-family: "Vollkorn", sans-serif;
   font-style: italic;
-  font-weight: 400;
   font-size: 17px;
   line-height: 22px;
   color: #ffffff;
@@ -338,9 +306,7 @@ h4 {
   height: 53px;
   margin-top: 22px;
   margin-left: calc(50% - 210px / 2);
-  font-family: "Vollkorn", sans-serif;
   font-style: italic;
-  font-weight: 400;
   font-size: 17px;
   line-height: 22px;
   color: rgba(233, 232, 232, 0.4);
@@ -353,9 +319,6 @@ h4 {
 .footer_text {
   margin-top: 14px;
   text-align: center;
-  font-family: "Vollkorn", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.4);
