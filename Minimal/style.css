@@ -6,9 +6,9 @@ body {
 
 .container {
   display: grid;
-  width: 100vw;
+  width: 100wv;
   grid-template-columns: 15% 1fr 15%;
-  grid-template-rows: 3% 9.6% 7% 15% 3.9% 33% 12.7% 15.7%;
+  grid-template-rows: 1fr 9.7% 7.2% 15.5% 36, 4% 12.8% 15.8%;
 }
 
 .header {
@@ -16,66 +16,25 @@ body {
   grid-column: 2/3;
 }
 
-.section_making_brands {
-  grid-row: 2/3;
-  grid-column: 1/4;
-  background-image: url(assets/images/section1_fon.png);
-  background-size: 100% 100%;
-}
-
-.section-description_minimalist {
-  grid-row: 3/4;
-  grid-column: 1/4;
-  background-color: #fefec9;
-}
-
-.how_we_make_section {
-  grid-row: 4/5;
-  grid-column: 2/3;
-}
-
-.recent_projects_heading {
-  grid-row: 5/6;
-  grid-column: 2/3;
-  align-self: center;
-}
-
-.recent_projects_blocks {
-  grid-row: 6/7;
-  grid-column: 2/3;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.contacts {
-  grid-row: 7/8;
-  grid-column: 1/4;
-  background-image: url(assets/images/fon_footer.png);
-}
-
-.footer {
-  grid-row: 8/9;
-  grid-column: 1/4;
-  background: #000000;
-}
-
 .block-menu {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo_header {
+  height: 70%;
+  margin-right: auto;
 }
 
 .logo {
   height: 70px;
   width: 65px;
-  margin-top: 18px;
 }
 
 .logo-text {
-  margin-top: 18px;
-  margin-left: 18px;
-  margin-right: auto;
+  float: right;
+  padding: 18px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -99,8 +58,17 @@ body {
   background: #d4d4d4;
 }
 
-h1 {
-  margin-top: 98px;
+.section_making_brands {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  background-image: url(assets/images/section1_fon.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  margin: 105px auto 55px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -110,21 +78,34 @@ h1 {
   color: #ffffff;
 }
 
-.text_making_brands {
+.signature_making_brands {
+  margin: 0 auto 101px;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: rgba(255, 255, 255, 0.81);
 }
 
+.section-description_minimalist {
+  grid-row: 3/4;
+  grid-column: 1/4;
+  background-color: #fefec9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .description_minimalist_text {
-  margin-top: 60px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin: 60px 15% 0 15%;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: #47474f;
+}
+
+.button_get_in_touch {
+  width: 159px;
+  margin: 40px auto 61px;
 }
 
 .get_in_touch {
@@ -133,16 +114,18 @@ h1 {
   border: 2px solid;
   width: 159px;
   height: 53px;
-  margin-top: 40px;
-  margin-left: calc(50% - 159px / 2 + 0.5px);
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: #47474f;
 }
 
 .get_in_touch:hover {
   background: #ffffff;
+}
+
+.section_how_we_make {
+  grid-row: 4/5;
+  grid-column: 1/4;
 }
 
 .h2 {
@@ -157,18 +140,27 @@ h1 {
 
 .blocks_how_we_make {
   display: flex;
-  margin: 103px 0 38px 0;
   flex-wrap: wrap;
-  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .block_how_we_make {
   flex-basis: 300px;
 }
 
+.how_we_make_heading {
+  margin: 79px 0 103px;
+}
+
+.how_we_make_picture {
+  margin: 0 5px 44px;
+}
+
 .fon_img_how_we_make {
   display: flex;
   justify-content: center;
+  width: 300px;
   height: 219px;
   background-color: #f5f5f5;
   align-items: center;
@@ -190,6 +182,25 @@ h1 {
   line-height: 22px;
   text-align: center;
   color: #333333;
+}
+
+.recent_projects {
+  grid-row: 6/7;
+  grid-column: 1/4;
+  background: #f5f5f5;
+}
+
+.recent_projects_foto_block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 940px;
+  margin: 73px auto 69px;
+  background: #f5f5f5;
+}
+
+.recent_projects_heading {
+  margin-top: 69px;
 }
 
 .recent_projects_foto {
@@ -214,10 +225,17 @@ h1 {
   line-height: 20px;
 }
 
+.contacts {
+  grid-row: 7/8;
+  grid-column: 1/4;
+  background-image: url(assets/images/fon_footer.png);
+}
+
 .contacts_block {
   display: flex;
   justify-content: center;
   margin-top: 73px;
+  flex-wrap: wrap;
 }
 
 .h4 {
@@ -228,6 +246,10 @@ h1 {
   line-height: 20px;
   text-align: center;
   color: #333333;
+}
+
+.lets_get_social_heading {
+  margin-top: 79px;
 }
 
 .contacts_text {
@@ -255,6 +277,12 @@ h1 {
   align-self: stretch;
 }
 
+.footer {
+  grid-row: 8/9;
+  grid-column: 1/4;
+  background: #000000;
+}
+
 .images_icon {
   margin-left: calc(50% - 70px / 2);
 }
@@ -262,8 +290,8 @@ h1 {
 .form {
   display: flex;
   flex-direction: column;
-  margin-left: 438px;
-  margin-top: 69px;
+  max-width: 564px;
+  margin: 69px auto 22px;
 }
 
 .form1,
