@@ -6,7 +6,7 @@ body {
 
 .container {
   display: grid;
-  width: 100wv;
+  width: 100%;
   grid-template-columns: 15% 1fr 15%;
   grid-template-rows: 1fr 9.7% 7.2% 15.5% 36, 4% 12.8% 15.8%;
 }
@@ -126,6 +126,7 @@ body {
 .section_how_we_make {
   grid-row: 4/5;
   grid-column: 1/4;
+  justify-self: center;
 }
 
 .h2 {
@@ -142,7 +143,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 960px;
-  margin: 0 auto;
+  justify-content: space-around;
 }
 
 .block_how_we_make {
@@ -159,11 +160,11 @@ body {
 
 .fon_img_how_we_make {
   display: flex;
-  justify-content: center;
   width: 300px;
   height: 219px;
   background-color: #f5f5f5;
   align-items: center;
+  justify-content: center;
 }
 
 .h3 {
@@ -197,10 +198,11 @@ body {
   max-width: 940px;
   margin: 73px auto 69px;
   background: #f5f5f5;
+  justify-content: space-around;
 }
 
-.recent_projects_heading {
-  margin-top: 69px;
+.how_we_make_heading {
+  margin: 79px 0 103px;
 }
 
 .recent_projects_foto {
@@ -234,7 +236,6 @@ body {
 .contacts_block {
   display: flex;
   justify-content: center;
-  margin-top: 73px;
   flex-wrap: wrap;
 }
 
@@ -249,7 +250,7 @@ body {
 }
 
 .lets_get_social_heading {
-  margin-top: 79px;
+  margin: 79px auto 72px;
 }
 
 .contacts_text {
@@ -292,12 +293,6 @@ body {
   flex-direction: column;
   max-width: 564px;
   margin: 69px auto 22px;
-}
-
-.form1,
-.form2 {
-  width: 564px;
-  height: 57px;
 }
 
 .form_text1,
@@ -357,4 +352,56 @@ body {
   height: 46px;
   margin-left: calc(50% - 43px / 2 + 0.5px);
   margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    height: 20px;
+    margin: 5px;
+  }
+
+  .h1 {
+    margin: 15px auto 15px;
+    font-size: 25px;
+  }
+
+  .signature_making_brands {
+    margin: 0 auto 15px;
+  }
+
+  .how_we_make_heading {
+    margin: 25px 0 25px;
+  }
+
+  .blocks_how_we_make {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .how_we_make_heading {
+    margin: 25px 0 25px;
+  }
+
+  .lets_get_social_heading {
+    margin-top: 25px;
+  }
+
+  .form {
+    display: flex;
+    max-width: 100vw;
+    flex-direction: column;
+    margin: 20px auto 15px;
+  }
+
+  .form_text1,
+  .form_text2,
+  .form_text3 {
+    width: 90%;
+    padding-left: 15px;
+  }
+
+  footer_logo {
+    margin-top: 15px;
+  }
 }
