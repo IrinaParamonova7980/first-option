@@ -1,3 +1,8 @@
+body {
+  font-family: "Roboto Slab", Times, serif;
+  font-style: normal;
+  font-weight: 300;
+}
 .header {
   display: flex;
   max-width: 1350px;
@@ -33,11 +38,11 @@
   width: 14px;
   height: 14px;
 }
-.button_icon_size {
+.button__icon_size {
   width: 41px;
   height: 28px;
 }
-.button_text_size {
+.button-text_size {
   font-size: 35px;
   line-height: 35px;
 }
@@ -72,7 +77,7 @@
   }
 }
 .heading {
-  font-family: "Intro ";
+  font-family: "Intro", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
@@ -99,7 +104,7 @@
   }
 }
 .card__heading {
-  font-family: "Intro ";
+  font-family: "Intro", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -109,9 +114,6 @@
   color: #ffffff;
 }
 .card__content {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
   font-size: 20px;
   line-height: 160%;
 }
@@ -128,9 +130,6 @@
 .subscribe__contact {
   width: 323px;
   height: 50px;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
   font-size: 20px;
   line-height: 160%;
 }
@@ -141,27 +140,24 @@
   display: flex;
   flex-wrap: wrap;
 }
-.footer_position_home-page {
+.footer_position-home-page {
   margin-top: 146px;
 }
 @media screen and (max-width: 767px) {
-  .footer_position_home-page {
+  .footer_position-home-page {
     margin-top: 0px;
   }
 }
-.footer_position_opportunities-page {
+.footer_position-opportunities-page {
   margin: 114px auto 80px 126px;
 }
 @media screen and (max-width: 767px) {
-  .footer_position_opportunities-page {
+  .footer_position-opportunities-page {
     margin: 10px auto 20px 10px;
   }
 }
 .footer__menu {
   padding: 17px;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 300;
   font-size: 20px;
   line-height: 160%;
   color: #000000;
